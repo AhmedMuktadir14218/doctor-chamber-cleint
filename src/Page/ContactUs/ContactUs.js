@@ -5,7 +5,7 @@ import appointment from '../../assets/images/bg.png'
 const ContactUs = () => {
     return (
         // <div class="container my-24 px-6 mx-auto bg-accent">
-        <div class="m-12  bg-accent">
+        <div class="  bg-accent">
 
 
   <section class="mt-32 p-6 text-center text-gray-800 " style={{
@@ -13,8 +13,9 @@ const ContactUs = () => {
         }}>
 
 
-    <div className=' leading-normal' >
-    <h2 class=" text-xl font-bold mb-12 text-primary">Contact us</h2>
+    <div className=' mb-10' >
+    <h2 class="text-lg  text-primary">Contact us</h2>
+    <h2 class="text-3xl  text-white">Stay connected with us</h2>
       
 
 
