@@ -8,6 +8,7 @@ import Review from './Page/Review/Review';
 import ContactUs from './Page/ContactUs/ContactUs';
 import About from './Page/About/About';
 import Login from './Page/Login/Login';
+import SignUp from './Page/Login/SignUp/SignUp';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path='/reviews' element={<Review></Review>}></Route>
         <Route path='/contactus' element={<ContactUs></ContactUs>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
+        <Route path='/signup' element={<SignUp></SignUp>}></Route>
       </Routes>
     </div>
   );
