@@ -9,6 +9,9 @@ import ContactUs from './Page/ContactUs/ContactUs';
 import About from './Page/About/About';
 import Login from './Page/Login/Login';
 import SignUp from './Page/Login/SignUp/SignUp';
+import Dashboard from './Page/Dashboard/Dashboard';
+import { Toaster } from 'react-hot-toast';
+import PrivateRoute from './Routes/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
@@ -22,7 +25,15 @@ function App() {
         <Route path='/contactus' element={<ContactUs></ContactUs>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
+        <Route path='/dashboard' element={
+          <PrivateRoute>
+            <Dashboard></Dashboard>
+          </PrivateRoute>
+        
+        }></Route>
       </Routes>
+
+      <Toaster></Toaster>
     </div>
   );
 }
