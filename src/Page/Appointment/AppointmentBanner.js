@@ -5,7 +5,7 @@ import BGchair from '../../assets/images/bg.png';
 // import { format } from 'date-fns';
 import { DayPicker } from 'react-day-picker';
 import 'react-day-picker/dist/style.css';
-import { format, setDate } from 'date-fns';
+// import { format, setDate } from 'date-fns';
 
 
 

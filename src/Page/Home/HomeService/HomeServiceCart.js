@@ -9,8 +9,8 @@ const HomeServiceCart = ({ img , cardTitle,bgColor}) => {
             </figure>
             <div className="card-body items-center text-center">
                 <h2 className="card-title">{cardTitle}</h2>
-                <p><p>Lorem Ipsum is simply dummy printing and typesetting indust Ipsum has been the</p>
-                    </p>
+                <p>Lorem Ipsum is simply dummy printing and typesetting indust Ipsum has been the</p>
+                    
             </div>
         </div>
         </div>

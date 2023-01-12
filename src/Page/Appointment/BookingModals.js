@@ -4,7 +4,7 @@ import { AuthContext } from '../../Contexts/AuthProvider';
 
 const BookingModal = ({treatment,SelectedDate,setTreatment}) => {
     const { user } = useContext(AuthContext);
-    const {_id, name, slots } = treatment;
+    const {/**_id,**/ name, slots } = treatment;
 
     const handleBooking = event => {
         event.preventDefault();

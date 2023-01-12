@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Navbar from './Page/Shared/Navbar';
 import { Route, Routes } from 'react-router-dom';
@@ -14,6 +13,10 @@ import { Toaster } from 'react-hot-toast';
 import PrivateRoute from './Routes/PrivateRoute/PrivateRoute';
 
 function App() {
+
+
+
+  
   return (
     <div className="App">
       <Navbar></Navbar>
