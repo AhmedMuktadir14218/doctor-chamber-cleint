@@ -1,7 +1,9 @@
 import { format } from 'date-fns';
-import React from 'react';
+import React, { useContext } from 'react';
+import { AuthContext } from '../../Contexts/AuthProvider';
 
 const BookingModal = ({treatment,SelectedDate,setTreatment}) => {
+    const { user } = useContext(AuthContext);
     const {_id, name, slots } = treatment;
 
     const handleBooking = event => {
@@ -51,8 +53,8 @@ const BookingModal = ({treatment,SelectedDate,setTreatment}) => {
                                 >{slot}</option>)
                             }
                         </select>
-                        <input name="name" type="text" placeholder="Your Name" className="input w-full input-bordered" />
-                        <input name="email" type="email" placeholder="Email Address" className="input w-full input-bordered" />
+                        <input name="name" type="text" placeholder="Patient Name" className="input w-full input-bordered" />
+                        <input name="email" type="email" placeholder="Email Address" className="input w-full input-bordered" value={user.email} />
                         <input name="phone" type="text" placeholder="Phone Number" className="input w-full input-bordered" />
                         <br />
                         <input className='btn btn-accent w-full' type="submit" value="Submit" />

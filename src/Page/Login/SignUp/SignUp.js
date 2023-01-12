@@ -4,6 +4,7 @@ import { toast } from 'react-hot-toast';
 // import toast from 'react-hot-toast';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../../Contexts/AuthProvider';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 
 const SignUp = () => {
@@ -64,7 +65,7 @@ const SignUp = () => {
                 </form>
                 <p>Already have an account <Link className='text-secondary' to="/login">Please Login</Link></p>
                 <div className="divider">OR</div>
-                <button className='btn btn-outline w-full'>CONTINUE WITH GOOGLE</button>
+                <SocialLogin></SocialLogin>
 
             </div>
         </div>

@@ -15,6 +15,12 @@ const AuthProvider = ({children}) => {
         setLoading(true);
         return createUserWithEmailAndPassword(auth,email,password)
     }
+    // const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
+    // const googleSignIn = ()=>{
+    //     setLoading(true);
+    //     return useSignInWithGoogle(auth)
+    // }
+
 
     const signIn = (email,password)=>{
         setLoading(true);

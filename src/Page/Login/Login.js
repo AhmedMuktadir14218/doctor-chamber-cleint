@@ -2,6 +2,7 @@ import React, { useContext, useState} from 'react';
 import { useForm } from 'react-hook-form';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import  { AuthContext } from '../../Contexts/AuthProvider';
+import SocialLogin from './SocialLogin/SocialLogin';
 
 const Login = () => {
   const { register, formState: { errors }, handleSubmit } = useForm();
@@ -59,7 +60,8 @@ const Login = () => {
               </form>
               <p>New to Doctors Portal <Link className='text-secondary' to="/signup">Create new Account</Link></p>
               <div className="divider">OR</div>
-              <button className='btn btn-outline w-full'>CONTINUE WITH GOOGLE</button>
+              {/* <button className='btn btn-outline w-full'>CONTINUE WITH GOOGLE</button> */}
+              <SocialLogin></SocialLogin>
           </div>
       </div>
   );
