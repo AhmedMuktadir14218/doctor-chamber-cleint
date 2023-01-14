@@ -1,9 +1,11 @@
 import { format } from 'date-fns';
 import React, { useContext } from 'react';
+import { toast } from 'react-hot-toast';
 import { AuthContext } from '../../Contexts/AuthProvider';
 
 const BookingModal = ({treatment,SelectedDate,setTreatment}) => {
     const { user } = useContext(AuthContext);
+    const date =format(SelectedDate,'PP');
     const {/**_id,**/ name, slots } = treatment;
 
     const handleBooking = event => {
@@ -14,26 +16,41 @@ const BookingModal = ({treatment,SelectedDate,setTreatment}) => {
         const email = form.email.value;
         const phone = form.phone.value;
         // [3, 4, 5].map((value, i) => console.log(value))
-        // const booking = {
-        //     appointmentDate: date,
-        //     treatment: name,
-        //     patient: name,
-        //     slot,
-        //     email,
-        //     phone,
-        // }
-
+        const booking = {
+            appointmentDate: date,
+            treatment: name,
+            patient: name,
+            slot,
+            email,
+            phone,
+        }
+         
         // TODO: send data to the server
+        
         // and once data is saved then close the modal 
         // and display success toast
-        console.log(slot,name,email,phone);
-        setTreatment(null);
+        fetch ('http://localhost:8000/bookings',{
+            method:'POST',
+            headers : {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(booking)
+        })
+        .then(res => res.json())
+        .then(data => {
+            console.log(data);
+            if (data.acknowledged){
+                setTreatment(null);
+            toast.success('Booking Confirmed');
+            }
+        })
+        
     }
 
     return (
         <div>
             {/* The button to open modal */}
-            <label htmlFor="booking-modal" className="btn">open modal</label>
+            {/* <label htmlFor="booking-modal" className="btn">open modal</label> */}
 
             {/* Put this part before </body> tag */}
             <input type="checkbox" id="booking-modal" className="modal-toggle" />
@@ -53,8 +70,8 @@ const BookingModal = ({treatment,SelectedDate,setTreatment}) => {
                                 >{slot}</option>)
                             }
                         </select>
-                        <input name="name" type="text" placeholder="Patient Name" className="input w-full input-bordered" />
-                        <input name="email" type="email" placeholder="Email Address" className="input w-full input-bordered" value={user.email} />
+                        <input name="name" type="text" placeholder="Patient Name" defaultValue={user?.name} className="input w-full input-bordered" />
+                        <input name="email" type="email" placeholder="Email Address" className="input w-full input-bordered" defaultValue={user?.email}  />
                         <input name="phone" type="text" placeholder="Phone Number" className="input w-full input-bordered" />
                         <br />
                         <input className='btn btn-accent w-full' type="submit" value="Submit" />
