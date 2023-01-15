@@ -1,25 +1,29 @@
 import './App.css';
-import Navbar from './Page/Shared/Navbar';
-import { Route, Routes } from 'react-router-dom';
-import Home from './Page/Home/Home';
-import Appointment from './Page/Appointment/Appointment';
-import Review from './Page/Review/Review';
-import ContactUs from './Page/ContactUs/ContactUs';
-import About from './Page/About/About';
-import Login from './Page/Login/Login';
-import SignUp from './Page/Login/SignUp/SignUp';
-import Dashboard from './Page/Dashboard/Dashboard';
+// import Navbar from './Page/Shared/Navbar';
+// import { Route, Routes } from 'react-router-dom';
+// import Home from './Page/Home/Home';
+// import Appointment from './Page/Appointment/Appointment';
+// import Review from './Page/Review/Review';
+// import ContactUs from './Page/ContactUs/ContactUs';
+// import About from './Page/About/About';
+// import Login from './Page/Login/Login';
+// import SignUp from './Page/Login/SignUp/SignUp';
+// import Dashboard from './Page/Dashboard/Dashboard';
+// import { Toaster } from 'react-hot-toast';
+// import PrivateRoute from './Routes/PrivateRoute/PrivateRoute';
+
+import router from './Routes/Routes/Routes';
+
+import { RouterProvider } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
-import PrivateRoute from './Routes/PrivateRoute/PrivateRoute';
+
+// import { Toaster } from 'react-hot-toast';
 
 function App() {
 
-
-
-  
   return (
     <div className="App">
-      <Navbar></Navbar>
+      {/* <Navbar></Navbar>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/about' element={<About></About>}></Route>
@@ -38,8 +42,9 @@ function App() {
           </PrivateRoute>
         
         }></Route>
-      </Routes>
-
+      </Routes> */}
+      
+      <RouterProvider router={router}></RouterProvider>
       <Toaster></Toaster>
     </div>
   );

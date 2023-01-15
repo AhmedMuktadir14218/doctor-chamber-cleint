@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from 'react-router-dom';
+// import { BrowserRouter } from 'react-router-dom';
 import AuthProvider from './Contexts/AuthProvider';
 import {
   QueryClient,
@@ -18,7 +18,7 @@ const queryClient = new QueryClient()
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    {/* <BrowserRouter> */}
       <QueryClientProvider client={queryClient}>
         <AuthProvider>
           <App />
@@ -26,7 +26,7 @@ root.render(
       </QueryClientProvider>
 
 
-    </BrowserRouter>
+    {/* </BrowserRouter> */}
   </React.StrictMode>
 );
 
