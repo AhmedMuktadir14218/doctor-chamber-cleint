@@ -104,7 +104,7 @@ const SignUp = () => {
 };
 
 export default SignUp;
-// I:\C backup\ReturnWeb\Full MERN\doctors-portal-client
+
 // const SignUp = () => {
 //     const { register, handleSubmit, formState: { errors } } = useForm();
 //     const { createUser, updateUser } = useContext(AuthContext);
