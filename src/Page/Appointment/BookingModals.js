@@ -69,8 +69,8 @@ const BookingModal = ({treatment,SelectedDate,setTreatment,refetch}) => {
                                  >{slot}</option>)
                              }
                          </select>
-                         <input name="name" type="text" defaultValue={user?.displayName} disabled placeholder="Your Name" className="input w-full input-bordered" />
-                         <input name="email" type="email" defaultValue={user?.email} disabled placeholder="Email Address" className="input w-full input-bordered" />
+                         <input name="name" type="text" defaultValue={user?.displayName}  placeholder="Your Name" className="input w-full input-bordered" />
+                         <input name="email" type="email" defaultValue={user?.email}  placeholder="Email Address" className="input w-full input-bordered" />
                          <input name="phone" type="text" placeholder="Phone Number" className="input w-full input-bordered" />
                          <br />
                          <input className='btn btn-accent w-full' type="submit" value="Submit" />
