@@ -1,9 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../../Layout/Main";
-// import Main from "../../Layout/Main";
+
 import Appointment from "../../Page/Appointment/Appointment";
-// import Dashboard from "../../Page/Dashboard/Dashboard";
-// import Home from "../../Pages/Home/Home/Home";
+
 import Login from "../../Page/Login/Login";
 import SignUp from "../../Page/Login/SignUp/SignUp";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
@@ -12,6 +11,7 @@ import ContactUs from "../../Page/ContactUs/ContactUs";
 import Review from "../../Page/Review/Review";
 import DashboardLayout from "../../Layout/DashboardLayout";
 import MyAppointment from "../../Page/Dashboard/MyAppointment/MyAppointment";
+// import About from "../../Page/About/About";
 
 const router = createBrowserRouter([
     {
@@ -38,6 +38,10 @@ const router = createBrowserRouter([
                 path: '/contactus',
                 element: <ContactUs></ContactUs>
             },
+            // {
+            //     path: '/about',
+            //     element: <About></About>
+            // },
 
             {
                 path: '/reviews',
