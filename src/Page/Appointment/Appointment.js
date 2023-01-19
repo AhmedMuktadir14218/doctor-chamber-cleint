@@ -1,5 +1,5 @@
 import React from 'react';
-import Footer from '../Shared/Footer/Footer';
+// import Footer from '../Shared/Footer/Footer';
 import AppointmentBanner from './AppointmentBanner';
 
 import AvailableAppointment from './AvailableAppointment/AvailableAppointment';
@@ -11,7 +11,7 @@ const Appointment = () => {
             <AppointmentBanner SelectedDate={SelectedDate} setDate={setDate}></AppointmentBanner>
             <AvailableAppointment SelectedDate={SelectedDate}></AvailableAppointment>
             
-        <Footer></Footer>            
+        {/* <Footer></Footer>             */}
         </div>
         
     );

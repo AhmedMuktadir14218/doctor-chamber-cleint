@@ -13,7 +13,8 @@ const MyAppointment = () => {
             const res = await fetch(url);
             // const res = await fetch(url, {
             //     headers: {
-            //        authorization: `bearer ${localStorage.getItem('accessToken')}` 
+            //         Authorization : `bearer ${localStorage.getItem('accessToken')}` 
+            //     // 'Authorization': "Bearer" + localStorage.getItem("accessToken")
             //     }
             // });
             const data = await res.json();
