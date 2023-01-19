@@ -22,31 +22,40 @@ import { Toaster } from 'react-hot-toast';
 function App() {
 
   return (
-    <div className="App">
-      {/* <Navbar></Navbar>
-      <Routes>
-        <Route path='/' element={<Home></Home>}></Route>
-        <Route path='/about' element={<About></About>}></Route>
-        <Route path='/appointment' element={
-          <PrivateRoute>
-            <Appointment></Appointment>
-          </PrivateRoute>
-        }></Route>
-        <Route path='/reviews' element={<Review></Review>}></Route>
-        <Route path='/contactus' element={<ContactUs></ContactUs>}></Route>
-        <Route path='/login' element={<Login></Login>}></Route>
-        <Route path='/signup' element={<SignUp></SignUp>}></Route>
-        <Route path='/dashboard' element={
-          <PrivateRoute>
-            <Dashboard></Dashboard>
-          </PrivateRoute>
-        
-        }></Route>
-      </Routes> */}
-      
+    // <div className='max-w-[1440px] mx-auto' >
+    <div >
       <RouterProvider router={router}></RouterProvider>
       <Toaster></Toaster>
     </div>
+
+
+
+
+    // <div className="App">
+    //   {/* <Navbar></Navbar>
+    //   <Routes>
+    //     <Route path='/' element={<Home></Home>}></Route>
+    //     <Route path='/about' element={<About></About>}></Route>
+    //     <Route path='/appointment' element={
+    //       <PrivateRoute>
+    //         <Appointment></Appointment>
+    //       </PrivateRoute>
+    //     }></Route>
+    //     <Route path='/reviews' element={<Review></Review>}></Route>
+    //     <Route path='/contactus' element={<ContactUs></ContactUs>}></Route>
+    //     <Route path='/login' element={<Login></Login>}></Route>
+    //     <Route path='/signup' element={<SignUp></SignUp>}></Route>
+    //     <Route path='/dashboard' element={
+    //       <PrivateRoute>
+    //         <Dashboard></Dashboard>
+    //       </PrivateRoute>
+        
+    //     }></Route>
+    //   </Routes> */}
+      
+    //   <RouterProvider router={router}></RouterProvider>
+    //   <Toaster></Toaster>
+    // </div>
   );
 }
 
