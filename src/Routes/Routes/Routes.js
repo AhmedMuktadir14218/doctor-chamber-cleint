@@ -11,7 +11,7 @@ import Home from "../../Page/Home/Home";
 // import Review from "../../Page/Review/Review";
 import DashboardLayout from "../../Layout/DashboardLayout";
 import MyAppointment from "../../Page/Dashboard/MyAppointment/MyAppointment";
-import AdminRoute from "../AdminRoute/AdminRoute";
+// import AdminRoute from "../AdminRoute/AdminRoute";
 import AllUsers from "../../Page/Dashboard/AllUsers/AllUsers";
 // import About from "../../Page/About/About";
 
@@ -48,9 +48,13 @@ const router = createBrowserRouter([
                 path: '/dashboard',
                 element: <MyAppointment></MyAppointment>
             },
+            // {
+            //     path: '/dashboard/allusers',
+            //     element: <AdminRoute><AllUsers></AllUsers></AdminRoute>
+            // },
             {
                 path: '/dashboard/allusers',
-                element: <AdminRoute><AllUsers></AllUsers></AdminRoute>
+                element: <AllUsers></AllUsers>
             },
             // {
             //     path: '/dashboard/adddoctor',
