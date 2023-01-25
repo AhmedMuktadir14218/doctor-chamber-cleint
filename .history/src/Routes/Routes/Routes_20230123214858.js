@@ -11,7 +11,7 @@ import Home from "../../Page/Home/Home";
 // import Review from "../../Page/Review/Review";
 import DashboardLayout from "../../Layout/DashboardLayout";
 import MyAppointment from "../../Page/Dashboard/MyAppointment/MyAppointment";
-import AdminRoute from "../AdminRoute/AdminRoute";
+// import AdminRoute from "../AdminRoute/AdminRoute";
 import AllUsers from "../../Page/Dashboard/AllUsers/AllUsers";
 import AddDoctor from "../../Page/Dashboard/AddDoctor/AddDoctor";
 import ManageDoctors from "../../Page/Dashboard/ManageDoctors/ManageDoctors";
@@ -54,15 +54,26 @@ const router = createBrowserRouter([
                 path: '/dashboard/allusers',
                 element: <AdminRoute><AllUsers></AllUsers></AdminRoute>
             },
-           
+            // {
+            //     path: '/dashboard/allusers',
+            //     element: <AllUsers></AllUsers>
+            // },
             {
                 path: '/dashboard/adddoctor',
-                element: <AdminRoute><AddDoctor></AddDoctor></AdminRoute>
+                element: <AddDoctor></AddDoctor>
             },
             {
-                path: '/dashboard/managedoctors',
-                element: <AdminRoute><ManageDoctors></ManageDoctors></AdminRoute>
+                path: '/dashboard/managedoctor',
+                element: <ManageDoctors></ManageDoctors>
             },
+            // {
+            //     path: '/dashboard/adddoctor',
+            //     element: <AdminRoute><AddDoctor></AddDoctor></AdminRoute>
+            // },
+            // {
+            //     path: '/dashboard/managedoctors',
+            //     element: <AdminRoute><ManageDoctors></ManageDoctors></AdminRoute>
+            // },
         ]
     }
 ])

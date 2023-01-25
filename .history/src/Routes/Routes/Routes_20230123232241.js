@@ -50,19 +50,19 @@ const router = createBrowserRouter([
                 path: '/dashboard',
                 element: <MyAppointment></MyAppointment>
             },
-            {
-                path: '/dashboard/allusers',
-                element: <AdminRoute><AllUsers></AllUsers></AdminRoute>
-            },
+            // {
+            //     path: '/dashboard/allusers',
+            //     element: <AdminRoute><AllUsers></AllUsers></AdminRoute>
+            // },
            
-            {
-                path: '/dashboard/adddoctor',
-                element: <AdminRoute><AddDoctor></AddDoctor></AdminRoute>
-            },
-            {
-                path: '/dashboard/managedoctors',
-                element: <AdminRoute><ManageDoctors></ManageDoctors></AdminRoute>
-            },
+            // {
+            //     path: '/dashboard/adddoctor',
+            //     element: <AdminRoute><AddDoctor></AddDoctor></AdminRoute>
+            // },
+            // {
+            //     path: '/dashboard/managedoctors',
+            //     element: <AdminRoute><ManageDoctors></ManageDoctors></AdminRoute>
+            // },
         ]
     }
 ])
