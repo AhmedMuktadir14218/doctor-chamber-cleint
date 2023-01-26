@@ -31,8 +31,8 @@ const AvailableAppointment = ({ SelectedDate }) => {
 
     return (
         <div>
-            <h4 className='text-center text-xl text-primary' >Available Services on {format(SelectedDate, 'PP')}</h4>
-            <h3 className='text-center text-xl text-accent'>Please select a service.</h3>
+            <h4 className='text-center text-xl text-primary font-bold' >Available Services on {format(SelectedDate, 'PP')}</h4>
+            <h3 className='text-center text-xl text-accent'>Please select our service.</h3>
 
 
 
