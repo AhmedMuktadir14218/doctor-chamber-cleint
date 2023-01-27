@@ -67,8 +67,9 @@ const AddDoctor = () => {
     }
 
     return (
-        <div className='w-96 p-7'>
-            <h2 className="text-4xl">Add A Doctor</h2>
+        <div className='h-[800px] flex justify-center '>
+            <div className='w-96 p-7 '>
+            <h2 className="text-4xl">Add Doctor</h2>
             <form onSubmit={handleSubmit(handleAddDoctor)}>
                 <div className="form-control w-full max-w-xs">
                     <label className="label"> <span className="label-text">Name</span></label>
@@ -109,6 +110,8 @@ const AddDoctor = () => {
                 <input className='btn btn-accent w-full mt-4' value="Add Doctor" type="submit" />
             </form>
         </div>
+        </div>
+        
     );
 };
 
