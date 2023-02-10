@@ -30,7 +30,7 @@ const BookingModal = ({treatment,SelectedDate,setTreatment,refetch}) => {
          // TODO: send data to the server
          // and once data is saved then close the modal 
          // and display success toast
-         fetch('http://localhost:5000/bookings', {
+         fetch('https://doctor-chamber-server.vercel.app/bookings', {
              method: 'POST',
              headers: {
                  'content-type': 'application/json'
@@ -110,7 +110,7 @@ const BookingModal = ({treatment,SelectedDate,setTreatment,refetch}) => {
         
 //         // and once data is saved then close the modal 
 //         // and display success toast
-//         fetch ('http://localhost:5000/bookings',{
+//         fetch ('https://doctor-chamber-server.vercel.app/bookings',{
 //             method:'POST',
 //             headers : {
 //                 'content-type': 'application/json'
