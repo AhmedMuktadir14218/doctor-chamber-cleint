@@ -9,6 +9,3 @@ https://doctor-chamber-3421f.web.app/
 
 # Doctor Chamber Web App
 
-????????////?????
-
-# doctor-chamber-client
